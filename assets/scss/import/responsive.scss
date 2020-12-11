@@ -1,0 +1,834 @@
+/*------------ RESPONSIVE ------------*/
+
+/* 1920px ABOVE*/
+@media screen and (min-width: 1920px) {
+  .frontpage-outer-cover .wave-container .frontpage-cover-container{
+      width: 100%;
+  }
+}
+/* ////// 1920px ABOVE - END //////// */
+
+/*- 1600px -*/
+@media screen and (max-width: 1600px) {
+    .c2-full-text-img-frontpage .text-img-box-container{
+        .textbox{
+            padding: 40px;
+        }
+        .imgbox{
+            .speech-bubble-container{
+                padding: 80px;
+                 .triangle{
+                    top: 35px;
+                }
+            }
+        }
+
+    }
+}
+
+/*-Desktop (iMac) 1450px-*/
+@media screen and (max-width: 1450px) {
+    .contact-form-footer{
+        height: 750px;
+        .contact-form-footer-container{
+            .contact-form-box{
+                padding-right: 40px;
+                padding-left: 40px;
+            }
+            .imgbox{
+                img{
+                    height: 100%;
+                    margin-left: -10%;
+                }
+                .img-square{
+                    left: 10%;
+                    padding: calc(300px / 2);
+                }
+            }
+        }
+    }
+    .map-contact-info .contact-info-container{
+        margin-bottom: -15px;
+    }
+    .c2-full-text-img-frontpage .text-img-box-container{
+        .textbox{
+            padding: 40px;
+            .list-container{
+                padding-top: 25px;
+                .list-item{
+                padding-bottom: 25px;
+                }
+            }
+        }
+
+    }
+}
+//1450 end
+/*-Desktop (Macbook) 1200px-*/
+@media screen and (max-width: 1200px) {
+    .frontpage-outer-cover .frontpage-flex-container {
+        align-items: flex-start;
+        padding-top: 20px;
+
+        .frontpage-textbox {
+            margin-right: 20px;
+            width: calc(66% - 20px);
+        }
+
+        .frontpage-contact-form {
+            width: 431px;
+        }
+    }
+    .map-contact-info .contact-info-container{
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+#masthead{
+    .main-navigation .main-nav ul li{
+        &.booking-btn{
+            margin-left: 10px;
+        }
+        a{
+        padding-left: 15px;
+        padding-right: 15px;
+        }
+    }
+    .menu-item-has-children .dropdown-menu-toggle{
+        padding-right: 0px;
+    }
+}
+    #masthead .site-logo a img{
+        max-height: 75px;
+    }
+    .frontpage-title-container{
+        h2{
+            font-size: 30px;
+        }
+    }
+    .c2-full-text-img-frontpage .text-img-box-container .imgbox .speech-bubble-container{
+        padding: 40px;
+        .triangle{
+            top: -5px;
+        }
+    }
+
+
+}
+//1200 end
+/*-Desktop (Macbook) 1050px-*/
+@media screen and (max-width: 1050px) {
+    h1{
+        font-size: 32px;
+    }
+    .c2-full-text-img-frontpage .text-img-box-container {
+        .textbox{
+            max-width: unset;
+        }
+        .imgbox {
+            width: 100%;
+            height: 90vh;
+            background-position: 50% 0;
+            background-size: cover;
+
+            .speech-bubble-container {
+                padding: 50px 60px;
+
+                .triangle {
+                    top: 5px;
+                }
+            }
+        }
+    }
+    .contact-form-footer{
+        height: auto;
+        .contact-form-footer-container{
+            padding: 80px 40px;
+            padding-bottom: 0px;
+        flex-wrap: wrap-reverse;
+            .imgbox{
+                width: 100%;
+                margin: auto;
+                img{
+                    width: 50%;
+                    margin: auto;
+                }
+                .img-square{
+                    left: 25%;
+                }
+            }
+            .contact-form-box{
+                width: 100%;
+                margin: auto;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+    }
+    .site-footer .footer-widgets .inside-footer-widgets{
+        display: unset;
+        .grid-25{
+            width: 50%;
+        }
+    }
+    .c2-img-text .img-text-container .textbox{
+        h1{
+            font-size: 32px;
+        }
+        .quote{
+            font-size: 18px;
+        }
+    }
+#masthead{
+    .main-navigation .main-nav ul li{
+        &.booking-btn{
+            a{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+         a{
+            font-size: 14px;
+
+        }
+    }
+}
+    #masthead .site-logo a img{
+        max-height: 65px;
+    }
+    .c2-full-text-img-frontpage .text-img-box-container{
+        flex-wrap: wrap;
+        .textbox{
+            padding: 85px;
+            .list-container{
+                padding-top: 45px;
+                .list-item{
+                padding-bottom: 45px;
+                }
+            }
+        }
+        .imgbox{
+            .speech-bubble-container{
+                padding: 100px 120px;
+                 .triangle{
+                    top: 55px;
+                }
+            }
+        }
+    }
+}
+//1050 end
+/*-Tablet (Orientation: landscape) 1024px-*/
+@media screen and (max-width: 1024px) {
+    .frontpage-outer-cover {
+        h1 {
+            font-size: 44px;
+        }
+
+        .frontpage-flex-container {
+            .frontpage-contact-form {
+                width: 350px;
+                padding: 30px;
+
+                p {
+                    font-size: 20px;
+
+                    strong {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    .gform_body .ginput_container .gform_button span {
+        font-size: 14px;
+    }
+    .c3-reviews .review-container .slick-list{
+        padding: 0px 30px !important;
+        .slick-track .slick-slide{
+        box-shadow: $shadowSettings;
+        visibility: visible;
+            &.slick-active{
+            box-shadow: 0px 0px 0px #00000000;
+            }
+        }
+    }
+    .contact-form .contact-form-container .gform_body ul{
+    grid-template-areas:
+    'a a a'
+    'b b b'
+    'c c c'
+    'd d d'
+    'e e e'
+    'f f f';
+    }
+#masthead{
+    .main-navigation .main-nav ul li a{
+        font-size: 13px;
+        padding-left: 11px;
+        padding-right: 11px;
+        // line-height: 50px;
+    }
+}
+    #masthead{
+        padding: 20px !important;
+        .site-logo a img{
+        max-height: 60px;
+        }
+    }
+    .main-navigation .main-nav ul li{
+        a{
+        line-height: 50px;
+        }
+        &.is-booking{
+            margin-left: 2px;
+        }
+    }
+
+    .c2-img-text .img-text-container .textbox .bbh-btn{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .c2-img-text .img-text-container{
+        display: flex;
+        flex-direction: column-reverse;
+        .imgbox{
+            padding-bottom: 100%;
+        }
+    }
+}
+//1024 end
+
+
+/*-Tablet (Extra) 850px-*/
+@media screen and (max-width: 850px) {
+    .top-bar .large-grid-container .top-bar-container .top-bar-links a span {
+        display: none;
+    }
+
+    .frontpage-outer-cover {
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+    .contact-form-footer .contact-form-footer-container .imgbox{
+        img{
+            height: 350px;
+            width: auto;
+        }
+        .img-square{
+            padding: calc(220px / 2);
+            border: 30px solid #65B470;
+        }
+    }
+    .copyright-bottom-bar{
+        flex-direction: column-reverse;
+        align-items: center;
+        //padding-bottom: 40px;
+        .bottom-btn-container{
+            padding-bottom: 10px;
+        }
+    }
+    .all-reviews .all-review-container{
+        grid-template-columns: 1fr;
+    }
+
+
+
+    .c4-prices{
+        padding-bottom: -120px;
+        .prices-container .placeholder{
+        height: unset;
+        }
+        .flexible-inner-section:last-child{
+            padding-bottom: 0px;
+        }
+    }
+    #masthead{
+        .main-navigation .main-nav ul li{
+            &.booking-btn{
+                a{
+                    padding-left: 16px;
+                    padding-right: 16px;
+                }
+            }
+             a{
+            font-size: 12px;
+            padding-left: 10px;
+            padding-right: 10px;
+            }
+        }
+    }
+}
+//850 end
+
+@media screen and (max-width: 800px) {
+    #masthead .site-logo a img{
+        max-height: 60px !important;
+    }
+    #masthead .main-navigation .main-nav ul li a{
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+    .menu-item-has-children .dropdown-menu-toggle{
+        padding-left: 5px;
+    }
+    #masthead .main-navigation .main-nav ul li{
+        &.booking-btn{
+            margin-left: 0px;
+        }
+    }
+}
+
+/*-Tablet (Orientation: portrait) 768px-*/
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 26px !important;
+    }
+    h2{
+        font-size: 22px !important;
+    }
+    h3{
+        font-size: 18px !important;
+    }
+    .main-navigation .main-nav ul li.no-click>a{
+        pointer-events: initial !important;
+    }
+
+.frontpage-outer-cover .wave-container .frontpage-cover-container{
+    &.hide-cover{
+        display: none !important;
+    }
+    &.mobile-background-img{
+        display: block !important;
+    }
+}
+
+    .top-bar .large-grid-container .top-bar-container {
+        width: calc(100% - 162px);
+        .mobile-top-bar-button {
+            display: flex;
+            align-items: center;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    .frontpage-outer-cover {
+        //height: calc(900px - 50px - 80px - 65px);
+        .frontpage-flex-container {
+            flex-wrap: wrap;
+
+            .frontpage-textbox {
+                padding-top: 40px;
+                margin-right: 0;
+                width: 100%;
+                padding-bottom: 60px;
+            }
+
+            .frontpage-contact-form {
+                margin: auto;
+                width: 100%;
+
+                padding: 40px;
+                background-color: rgba(254, 254, 254, 0.90);
+            }
+            &.is-frontpage{
+                .frontpage-contact-form {
+                    max-width: 350px;
+                }
+            }
+        }
+    }
+
+    .c2-full-text-img-frontpage .text-img-box-container .imgbox {
+        height: 0;
+        padding-top: 100%;
+
+        .speech-bubble-container {
+            padding: 30px;
+
+            .triangle {
+                top: -15px;
+                left: 30%;
+            }
+        }
+    }
+    .frontpage-title-container{
+        h2{
+            font-size: 26px;
+        }
+    }
+    .c2-full-text-img-frontpage .text-img-box-container .textbox{
+        padding-left: 40px;
+        padding-right: 40px;
+        .list-container .list-item .list-icon{
+            padding-right: 15px;
+        }
+        .frontpage-title-container{
+            text-align: center;
+        }
+    }
+    .banner-subpage .banner-flex .title-text-container .quote-text{
+        font-size: 18px;
+    }
+    .site-footer{
+        .grid-container{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .footer-widgets .inside-footer-widgets .grid-25{
+            width: unset;
+        }
+    }
+    .c3-reviews{
+        padding-top: 50px;
+    }
+
+    .map-contact-info .contact-info-container{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .c2-img-text .img-text-container .textbox .title-text-container{
+        span{
+            font-size: 15px !important;
+            padding: 0px 4px;
+        }
+        .quote-text{
+        font-size: 15px;
+        }
+    }
+    .frontpage-flex-container{
+        &.is-booking{
+            padding-top: 40px !important;
+        }
+    }
+}
+//768 end
+/*-Smartphone (Samsung S6: landscape) 640px-*/
+@media screen and (max-width: 640px) {
+    .top-bar .large-grid-container .top-bar-container {
+        .top-bar-titel {
+            display: none;
+        }
+    }
+    .c2-full-text-img-frontpage .text-img-box-container .imgbox .speech-bubble-container .speech-bubble {
+        font-size: 16px;
+    }
+    .frontpage-outer-cover {
+        h1 {
+            font-size: 34px;
+        }
+    }
+    .single-blog-post{
+        h1{
+        font-size: 30px;
+        }
+        .blog-content{
+            h2{
+                font-size: 20px;
+            }
+            h3{
+                font-size: 18px;
+            }
+        }
+    }
+
+    .contact-form-box{
+        h2{
+            font-size: 34px;
+        }
+    }
+    .c3-reviews .review-container{
+        .slick-list{
+            padding: 0px 10px !important;
+        }
+        .review-box{
+            max-width: calc(360px - 48px);
+            height: 100%;
+            padding: 24px;
+            .review-text{
+                font-size: 14px;
+            }
+        }
+    }
+    .contact-form-footer .contact-form-footer-container .imgbox{
+        .img-square{
+            left: 15%;
+        }
+    }
+    .c2-img-text .img-text-container .textbox{
+        h1{
+            font-size: 29px;
+        }
+        .quote-text{
+            font-size: 15px !important;
+        }
+        p{
+            font-size: 14px;
+        }
+        .bbh-btn{
+            // padding-left: 0px;
+            // padding-right: 0px;
+            // width: 70%;
+        }
+    }
+    .contact-form-3 .gform_body ul.gform_fields{
+        grid-template-areas:
+        'a a'
+        'b b'
+        'c c'
+        'd d'
+        'e e'
+        'f f'
+        'g g'
+        'h h';
+        grid-gap: 10px;
+        .ginput_container_textarea{
+            padding-top: 10px;
+        }
+    }
+    .all-blog-posts .all-blog-posts-container .blog-box .img .thumbnail-img{
+        width: 100%;
+        height: unset;
+        padding-bottom: 61.53%;
+    }
+}
+//640 end
+/*-Smartphone (iPhone 4: landscape) 480px-*/
+@media screen and (max-width: 480px) {
+    .frontpage-outer-cover {
+        .pad-container {
+            padding: 0 20px;
+        }
+    }
+    .pad-container {
+        padding: 0 20px;
+    }
+
+    .c2-full-text-img-frontpage .text-img-box-container{
+        .textbox{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .imgbox .speech-bubble-container {
+        padding: 20px;
+
+        .triangle {
+            top: -25px;
+        }
+
+        .speech-bubble {
+            font-size: 13px;
+            padding: 25px;
+
+            span.icon-quote-down {
+                transform: translate(0px, 0px);
+                right: 10px;
+                bottom: 15px;
+
+                &.invis {
+                    font-size: 8px;
+                }
+            }
+        }
+        }
+    }
+    .frontpage-title-container{
+        h2{
+            font-size: 20px;
+        }
+    }
+
+    .all-reviews{
+    	padding: 0px 20px;
+    	.all-review-container{
+    		grid-gap: 30px;
+            .review-box{
+                padding: 32px;
+            }
+    	}
+    }
+    .banner-subpage{
+        .pad-container {
+        padding: 0px 20px;
+        }
+    }
+
+    .c2-img-text .img-text-container .textbox{
+        padding: 40px 20px;
+        .bbh-btn{
+            // width: 100%;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+
+    .banner-subpage .banner-flex .title-text-container{
+        padding: 20px 20px;
+    }
+    .c4-prices .prices-container .price-card{
+        height: unset;
+        min-height: 500px;
+        .info{
+            .description{
+                height: unset;
+            }
+        }
+    }
+    .all-blog-posts .all-blog-posts-container{
+        grid-template-columns: 1fr;
+        .blog-box .textbox{
+            margin-top: 0px;
+        }
+    }
+
+}
+//480 end
+/*-Smartphone (Big/newer smartphones) 425px-*/
+@media screen and (max-width: 425px) {
+    .top-bar .large-grid-container .top-bar-container {
+        .top-bar-titel {
+            p {
+                strong {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    #generate-slideout-menu {
+        width: calc(100% * 0.75);
+    }
+    .contact-form-footer .contact-form-footer-container .imgbox{
+        .img-square{
+            left: 5%;
+        }
+    }
+    .contact-form-footer .contact-form-footer-container {
+    padding: 50px 20px;
+    padding-bottom: 0px;
+    }
+}
+//425 end
+
+@media screen and (max-width: 424px) {
+    .c3-reviews .review-container{
+        .slick-list{
+            padding: 0px 0px !important;
+        }
+        .review-box{
+            max-width: calc(360px - 48px);
+            height: 100%;
+            padding: 24px;
+            margin-left: 10px;
+            margin-right: 10px;
+            .review-text{
+                font-size: 13px;
+            }
+        }
+    }
+    .banner-subpage .banner-flex .title-text-container .quote-text{
+        font-size: 14px;
+    }
+    .map-contact-info .contact-info-container{
+        padding-top: 20px;
+         .contact-card{
+        width: unset;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px 0px;
+        }
+    }
+    .single-blog-post{
+        h1{
+        font-size: 24px;
+        }
+        .blog-content{
+            h2{
+                font-size: 18px;
+            }
+        }
+    }
+
+}
+/*-Smartphone (Samsung S6: portrait) 360px-*/
+@media screen and (max-width: 360px) {
+    h1{
+        font-size: 22px !important;
+    }
+    h2{
+        font-size: 18px !important;
+    }
+    h3{
+        font-size: 16px !important;
+    }
+    .frontpage-outer-cover {
+        h1 {
+            font-size: 28px;
+        }
+    }
+    .contact-form-box{
+        h2{
+            font-size: 28px;
+        }
+    }
+    .c2-full-text-img-frontpage .text-img-box-container .imgbox .speech-bubble-container .triangle {
+        top: -5px;
+        border-bottom: 25px solid rgba(254, 254, 254, 0.85);
+        border-left: 35px solid transparent;
+    }
+    .c2-full-text-img-frontpage .text-img-box-container .textbox{
+        .frontpage-title-container{
+            word-break: break-all;
+        }
+        .list-container .list-item {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-gap: 15px;
+        }
+    }
+    .c4-prices .prices-container .price-card .info h2{
+        word-break: break-all;
+    }
+}
+//360 end
+/*-Smartphone (iphone 5: portrait) 320px-*/
+@media screen and (max-width: 320px) {
+    .top-bar{
+        padding: 0px 20px;
+        .large-grid-container .top-bar-container {
+            .top-bar-titel {
+                display: none;
+            }
+        }
+    }
+
+    .c2-full-text-img-frontpage .text-img-box-container .imgbox .speech-bubble-container .triangle {
+        display: none;
+    }
+    .hamburger{
+        padding: 15px 0px;
+    }
+    #generate-slideout-menu .slideout-logo a img{
+        max-height: 80px;
+    }
+
+}
+//320 end
+
+@media screen and (max-width: 319px) {
+    .all-blog-posts .all-blog-posts-container .blog-box .textbox h3{
+        word-break: break-all;
+    }
+}
+//319 end

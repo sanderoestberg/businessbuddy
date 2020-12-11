@@ -1,0 +1,274 @@
+/*-------------CONTACT FORM - FOOTER --------------*/
+.flexible-inner-section.white-bg + .contact-form-footer {
+        background-color: $colorWhite;
+    }
+.contact-form-footer{
+    width: 100%;
+    padding-top: 120px;
+    margin-top: -120px;
+    height: 870px;
+    &.is-booking{
+        height: unset;
+        .contact-form-footer-container{
+        padding-top: 70px;
+        padding-bottom: 70px;
+        justify-content: center;
+            .contact-form-box{
+                width: 100%;
+                max-width: 1000px;
+                padding-left: 0px;
+                padding-right: 0px;
+                .gform_body{
+                    ul .gfield{
+                    .ginput_container{
+                        input, textarea{
+                            border: 1px solid $colorWhiteOff;
+                        }
+                        .gform_button{
+                            width: 236px;
+                            margin: auto;
+                        }
+                    }
+                    .gfield_checkbox li input[type='checkbox']{
+                        &:before{
+                            border: 1px solid $colorWhiteOff;
+                            padding: 2.2px;
+                        }
+                        &:checked{
+                             &::before{
+                                background-color: $colorWhite !important;
+                                color: $colorGreen !important;
+                             }
+                        }
+                    }
+                    .ginput_container_consent input[type='checkbox']::before{
+                        border: 1px solid $colorWhiteOff;
+                    }
+                    }
+                }
+            }
+        }
+    }
+
+    // background-color: $colorWhite;
+    .contact-form-footer-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: $colorGreen;
+        margin-bottom: -1px;
+        height: 100%;
+        .imgbox{
+            width: 50%;
+            display: flex;
+            height: 100%;
+            align-items: flex-end;
+            position: relative;
+            justify-content: flex-end;
+            .img-square{
+                position: absolute;
+                left: 25%;
+                top: 7%;
+                display: inline-block;
+                padding: calc(434px / 2);
+                border: 40px solid #65B470;
+                border-radius: 14px;
+                opacity: 0.49;
+                z-index: 1;
+            }
+            img{
+                position: relative;
+                z-index: 10;
+                //width: 100%;
+                margin-bottom: -1px;
+                 //margin-top: -12%;
+                // // transform: translateY(-35px);
+                 // height: 940px;
+                 max-width: unset;
+            }
+
+        }
+        .contact-form-box{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            padding-left: 150px;
+            padding-right: 150px;
+            max-width: 520px;
+            color: $colorWhite;
+            .gform_body{
+                ul .gfield{
+
+                .ginput_container{
+                    input, textarea{
+                        border: 2px solid $colorWhite;
+                        color: $colorWhite;
+                        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                          color: $colorWhite;
+                        }
+                        &:-moz-placeholder { /* Firefox 19+ */
+                          color: $colorWhite;
+                        }
+                        &:-ms-input-placeholder { /* IE 10+ */
+                          color: $colorWhite;
+                        }
+                        &:-moz-placeholder { /* Firefox 18- */
+                          color: $colorWhite;
+                        }
+                    }
+                    textarea{
+                        max-height: 125px;
+                        border-radius: $borderRadiusBox;
+                    }
+                    input{
+                        margin-top: 9px;
+                        margin-bottom: 9px;
+                        padding: 20.5px 15px;
+
+                    }
+                    .gform_button{
+            			background-color: $colorWhite;
+                        color: $colorGreen;
+            			padding: 17px 30px;
+            			border-radius: $borderRadiusBtn;
+            			width: 100%;
+                        &:hover{
+                            opacity: 0.90;
+                        }
+
+            		}
+                }
+                }
+                .ginput_container_consent{
+                    label{
+                        color: $colorWhite;
+                        font-size: 13px !important;
+                    }
+                    input[type='checkbox']{
+                        &::before{
+                        border: 2px solid $colorWhite;
+                        }
+                        &:checked{
+            	             &::before{
+            	                 content: "✔";
+            	                 background-color: $colorWhite !important;
+            	                 color: $colorGreen !important;
+            	             }
+            	        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+.site-footer{
+    padding-top: 90px;
+    padding-bottom: 40px;
+    background-color: $colorDarkGray;
+    .grid-container{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .footer-widgets{
+        background-color: transparent;
+
+        .inside-footer-widgets{
+            display: flex;
+            justify-content: space-between;
+            .grid-25{
+                width: fit-content;
+            }
+            &:after{
+                display: none;
+            }
+            color: $colorWhiteOff;
+            a{
+                color: $colorWhiteOff;
+                line-height: 30px;
+                font-size: 15px;
+                font-weight: lighter;
+            }
+            h2{
+                color: $colorWhiteOff;
+                line-height: 52px;
+            }
+            span{
+                color: $colorWhiteOff;
+                font-size: 30px;
+                padding-right: 15px;
+            }
+            p{
+                color: $colorWhiteOff;
+                font-size: 15px;
+                font-weight: lighter;
+                line-height: 30px;
+                a img{
+                    padding-bottom: 12px;
+                    width: 92px;
+                }
+            }
+            .footer-links {
+				display: flex;
+				flex-direction: column;
+
+				a {
+					display: flex;
+					align-items: center;
+                    padding-bottom: 10px;
+
+
+					&:first-child {
+						margin-left: 0;
+					}
+
+					&:hover {
+						color: white;
+					}
+
+					span {
+						margin-left: 10px;
+                        font-size: 15px;
+					}
+				}
+
+				#phone-number::before {
+					content: "\e90c";
+					font-size: 20px;
+					font-family: 'icomoon' !important;
+				}
+
+				#email-adress::before {
+					content: "\e906";
+					font-size: 20px;
+					font-family: 'icomoon' !important;
+				}
+			}
+        }
+    }
+}
+
+
+/*----------------Copyright - Bottom Bar-------------*/
+.copyright-bottom-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: $colorWhiteOff;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 1px solid $colorWhite;
+    .bottom-btn-container{
+        a{
+            color: $colorWhiteOff;
+            font-weight: lighter;
+        }
+        .btn-seperator{
+            padding: 0px 25px;
+        }
+    }
+}

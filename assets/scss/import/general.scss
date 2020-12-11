@@ -1,0 +1,237 @@
+/*-------------- Small Grid Container -------------*/
+.small-grid-container{
+	max-width: 1065px !important;
+	margin: auto;
+}
+
+/*-------------- Grid Container -------------*/
+.grid-container{
+	// max-width: 1280px
+	padding-left: 0px;
+	padding-right: 0px;
+}
+/*-------------- Large Grid Container -------------*/
+.large-grid-container {
+	max-width: 1640px !important;
+	margin: auto;
+}
+
+.pad-container{
+	padding: 0px 40px;
+}
+
+.site-content{
+	display: block;
+}
+
+#content{
+	padding: 0px;
+}
+
+body, html{
+	width: 100%;
+	position: relative;
+	//overflow-x: hidden !important;
+	height: 100%;
+	//overflow-y: auto;
+}
+
+
+.white-off-bg{
+	background-color: $colorBackgroundOffWhite;
+}
+
+p[style="text-align: center;"] {
+  .bbh-btn{
+	  margin: auto;
+  }
+}
+
+/*========================================
+=                404 page                =
+========================================*/
+/*-------------- 404 -------------*/
+.error404 #primary {
+	padding-top: 150px;
+	padding-bottom: 150px;
+	text-align: center;
+}
+/*-------------- 404 btn -------------*/
+.btn-404 {
+	display: inline-block;
+	padding: 14px 25px;
+	min-width: 150px;
+	box-sizing: border-box;
+	background-color: black !important;
+	color: #fefefe !important;
+	text-transform: uppercase;
+	font-weight: 600;
+	transition: 0.3s ease-out;
+	font-size: 14px;
+	text-align: center;
+	margin-top: 50px;
+}
+//Setting page-template-default to 100% width, since we're using Flexible Content in this template.
+body.page-template-default.page #page {
+    max-width: 100%;
+    width: 100%;
+}
+
+.bbh-btn{
+	@include bbhbtn;
+}
+
+
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+
+
+/*===============================
+=            Gravityform           =
+===============================*/
+.gform_title{
+	display: none;
+}
+.validation_error{
+	margin-top: -20px;
+	color: $colorError !important;
+}
+.validation_message{
+	margin-top: -8px;
+	color: $colorError !important;
+}
+.gform_confirmation_message{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 15px;
+	&::before{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		content: "✔";
+		font-size: 40px;
+		color: $colorWhite;
+		background-color: $colorGreen;
+		width: 75px;
+		height: 75px;
+		border-radius: 100px;
+		margin-bottom: 25px;
+		box-shadow: 0 0 0 0 rgba(55,176,72, 1);
+	transform: scale(1);
+	animation: pulse 5s infinite;
+	}
+}
+.gform_body{
+	ul{
+		list-style: none;
+		margin: 0px;
+	}
+	.gfield_label{
+	display: none;
+	}
+	.ginput_container_consent{
+	    display: flex;
+	    flex-direction: row;
+	    align-items: center;
+	    margin-bottom: 10px;
+		input, label{
+			cursor: pointer;
+		}
+	    input[type='checkbox']{
+	        width: unset;
+	        visibility: hidden;
+	        margin-right: 15px;
+	        -moz-appearance:initial; // Hack for Firefox Browsers
+	        &::before{
+	            content: "";
+	            display: flex;
+	            align-items: center;
+	            justify-content: center;
+	            padding: 2.2px;
+	            width: 12px;
+	            height: 12px;
+	            border: 1px solid $colorDarkGray;
+				border-radius: 4px;
+
+	            visibility: visible;
+	        }
+	        &:checked{
+	             &::before{
+	                 content: "✔";
+	                 color: $colorWhite;
+	                 background-color: $colorGreen;
+	             }
+	        }
+	    }
+	    label{
+	        padding-top: 3px;
+	        font-size: 11px;
+	    }
+	}
+
+
+
+	.ginput_container{
+		input{
+			width: 100%;
+			border: 1px solid $colorDarkGray;
+			border-radius: $borderRadiusBox;
+		}
+		input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+		input, textarea{
+            resize: none !important;
+			font-size: 14px !important;
+			background-color: transparent;
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+              color: $colorDarkGray;
+            }
+            &:-moz-placeholder { /* Firefox 19+ */
+              color: $colorDarkGray;
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+              color: $colorDarkGray;
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+              color: $colorDarkGray;
+            }
+        }
+		.gform_button{
+			background-color: $colorGreen;
+			padding: 17px 30px;
+			border-radius: $borderRadiusBtn;
+			width: 100%;
+			span{
+				font-weight: 600 !important;
+			}
+		}
+	}
+}
+//Gravityform honeypot
+.gform_validation_container {
+    display: none!important;
+    position: absolute!important;
+    left: -9000px;
+}

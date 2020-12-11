@@ -1,0 +1,529 @@
+{
+    "key": "group_5f7c311530211",
+    "title": "Forside & Book-et-møde Cover",
+    "fields": [
+        {
+            "key": "field_5fa544fc7ba29",
+            "label": "col12",
+            "name": "col12",
+            "type": "column",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "column": "1_1",
+            "end_column": 0
+        },
+        {
+            "key": "field_5f7c313ced149",
+            "label": "Valg af baggrund-type",
+            "name": "frontpage_background_choice",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "img": "Billede",
+                "video": "Video",
+                "embed": "Video-link (YouTube)",
+                "color": "Farve"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5f7c64b844ee9",
+            "label": "Billede",
+            "name": "frontpage_background_img",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f7c313ced149",
+                        "operator": "==",
+                        "value": "img"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5f7c64ef44eea",
+            "label": "Video",
+            "name": "frontpage_background_video",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f7c313ced149",
+                        "operator": "==",
+                        "value": "video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5f7c66bcdbd09",
+            "label": "Video - Link (YouTube)",
+            "name": "frontpage_background_oembed",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f7c313ced149",
+                        "operator": "==",
+                        "value": "embed"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f7c66e5dbd0a",
+            "label": "Baggrundsfarve",
+            "name": "frontpage_background_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f7c313ced149",
+                        "operator": "==",
+                        "value": "color"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_5f8457bea8b62",
+            "label": "Video\/Billede fokus",
+            "name": "frontpage_cover_focus",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f7c313ced149",
+                        "operator": "==",
+                        "value": "video"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5f7c313ced149",
+                        "operator": "==",
+                        "value": "embed"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5f7c313ced149",
+                        "operator": "==",
+                        "value": "img"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left": "Venstre",
+                "center": "Midten",
+                "right": "Højre"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "center : Midten",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5fc49f1b58952",
+            "label": "Mobil - Baggrundsbillede",
+            "name": "frontpage_mobile_background_img",
+            "type": "image",
+            "instructions": "Baggrundsvideo virker ofte ikke på mobil, så her bliver baggrunden erstattet med dette billede",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5fc4a6f268ead",
+            "label": "Mobil - Billede fokus",
+            "name": "frontpage_cover_mobile_focus",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f7c313ced149",
+                        "operator": "==",
+                        "value": "video"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5f7c313ced149",
+                        "operator": "==",
+                        "value": "embed"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5f7c313ced149",
+                        "operator": "==",
+                        "value": "img"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left": "Venstre",
+                "center": "Midten",
+                "right": "Højre"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "center : Midten",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5f840fd894d31",
+            "label": "Forside indhold",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Forside Indhold",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5f84122d0e0e3",
+            "label": "col6",
+            "name": "col6",
+            "type": "column",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "column": "1_2",
+            "end_column": 0
+        },
+        {
+            "key": "field_5f84109b94d32",
+            "label": "Overskrift + Tekst",
+            "name": "frontpage_title_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5fa51fcc15027",
+            "label": "Ikon + Tekst",
+            "name": "frontpage_icon_text",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5fa51ffd15028",
+                    "label": "Ikon",
+                    "name": "icomoon",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "icomoon-select-element",
+                        "id": ""
+                    },
+                    "choices": {
+                        "false": "",
+                        "icon-instagram": "Instagram",
+                        "icon-linkedin": "Linkedin",
+                        "icon-facebook": "Facebook",
+                        "icon-quote-up": "Quote - Venstre",
+                        "icon-quote-down": "Quote - Højre",
+                        "icon-arrow-down": "Pil - Ned",
+                        "icon-arrow-right": "Pil - Højre",
+                        "icon-check": "Flueben",
+                        "icon-coaching": "Coaching",
+                        "icon-digitalisering": "Digitalisering",
+                        "icon-forretningsudvikling": "Forretningsudvikling",
+                        "icon-mail": "Email",
+                        "icon-telefon": "Telefon",
+                        "icon-pin": "Lokationsnål",
+                        "icon-sortsnak": "Sortsnak",
+                        "icon-sparring": "Sparring",
+                        "icon-work-life": "Work-Life",
+                        "icon-businessbuddy": "BusinessBuddy"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": true,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5fa5202c15029",
+                    "label": "Tekst",
+                    "name": "text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5f97c942a2f27",
+            "label": "Knap - Link",
+            "name": "frontpage_button",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_5fa540be17f45",
+            "label": "col6 (copy)",
+            "name": "col6_copy",
+            "type": "column",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "column": "1_2",
+            "end_column": 0
+        },
+        {
+            "key": "field_5f84125b0e0e5",
+            "label": "Kontaktformular - Overskrift + Tekst",
+            "name": "frontpage_contact_form",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5fa528907c842",
+            "label": "Vælg Kontaktformular",
+            "name": "frontpage_contact_form_choice",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "1": "Forside Kontaktformular",
+                "3": "Book-et-møde Kontaktformular",
+                "2": "Footer Kontaktformular"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5fa5400dd7c56",
+            "label": "Skjul bølge",
+            "name": "hide_wave",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Ja",
+            "ui_off_text": "Nej"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "5"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "30"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1606723365
+}

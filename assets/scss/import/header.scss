@@ -1,0 +1,465 @@
+body {
+	&.slide-opened {
+		#fixed-header {
+			&.is-stuck {
+				position: relative !important;
+				visibility: hidden !important;
+
+				&.fadeIn {
+					-webkit-animation-name: none;
+					animation-name: none;
+				}
+			}
+			position: unset;
+			&.sticky-nav{
+				position: fixed;
+				background-color: unset;
+				box-shadow: 0px 0px 0px transparent;
+				// transform: translateY(0px);
+				// top: 0px;
+				pointer-events: none;
+				.menu-toggle{
+					top: 17px;
+					pointer-events: none;
+				}
+			}
+
+			.menu-toggle {
+				visibility: visible;
+				color: $colorWhite;
+				position: fixed;
+				right: 0;
+				top: 70px;
+				z-index: 300;
+				pointer-events: none;
+			}
+		}
+
+		#mobile-header {
+			visibility: hidden !important;
+		}
+	}
+	&.sticky-nav{
+		padding-top: 150px;
+	}
+
+}
+
+
+.hamburger-inner,
+.hamburger-inner::after,
+.hamburger-inner::before {
+	width: 33px;
+	// border-radius: 0px;
+}
+
+#fixed-header{
+	box-shadow: $shadowSettings;
+		&.sticky-nav{
+			position: fixed;
+			top: -35px;
+			width: 100%;
+			z-index: 110;
+			transform: translateY(35px);
+			transition: transform 300ms ease-in-out 0s;
+			//transition: all 0.3s ease-in-out 0s;
+			background-color: $colorWhite;
+			box-shadow: $shadowSettings;
+			.main-navigation .main-nav ul li a{
+				color: unset;
+				&:hover{
+					color: $colorGreen;
+				}
+			}
+			#masthead{
+				padding: 10px 40px;
+				.site-logo{
+					visibility: visible;
+					&.white-logo{
+						visibility: hidden;
+					}
+					a img{
+						max-height: 70px;
+					}
+				}
+			}
+			#mobile-header{
+				top: 0px !important;
+				.inside-navigation{
+					height: 70px;
+				}
+				.site-logo.mobile-header-logo img{
+					height: 65px;
+				}
+			}
+		}
+
+
+}
+
+.main-navigation.mobile-header-navigation #sticky-placeholder{
+	display: none !important;
+	visibility: hidden;
+	opacity: 0;
+	height: 0px !important;
+}
+
+
+#masthead {
+	background-color: transparent !important;
+	padding: 15px 40px;
+
+	.site-logo {
+		float: left;
+		&.white-logo{
+			display: none;
+			position: absolute;
+		}
+		a img {
+			max-height: 70px;
+		}
+	}
+}
+
+.inside-header.grid-container.grid-parent {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0;
+	max-width: 1640px;
+
+	&:before {
+		display: none !important;
+	}
+
+	&:after {
+		display: none !important;
+	}
+}
+// .main-navigation .main-nav ul li:hover > a{
+// 	// color: $colorBlack;
+// }
+.main-navigation {
+	background-color: transparent;
+	.main-nav ul li a, .menu-toggle, .main-navigation .menu-bar-items{
+		color: $colorBlack;
+		&:hover{
+			color: $colorGreen;
+		}
+	}
+	.main-nav ul li.sfHover > a, .main-nav ul li[class*="current-menu-"] > a{
+		background-color: transparent !important;
+		color: $colorGreen !important;
+
+		&:hover{
+			color: $colorGreen;
+		}
+	}
+	ul ul{
+		background-color: $colorWhite;
+	}
+
+	.main-nav ul li {
+		&.no-click{
+			>a{
+					pointer-events: none;
+			}
+		}
+		.sub-menu{
+			width: 230px;
+			li{
+				cursor: pointer !important;
+				a{
+				color: $colorDarkGray;
+
+
+				}
+			}
+		}
+		a {
+			padding-left: 23px;
+			padding-right: 23px;
+			line-height: 55px;
+			font-weight: 600;
+		}
+
+		&:hover {
+			a {
+				background-color: transparent;
+			}
+		}
+
+		&.booking-btn {
+			background-color: $colorGreen;
+			border-radius: $borderRadiusBtn;
+			margin-left: 23px;
+			font-weight: bold;
+			transition: 0.3s all;
+
+			a {
+				padding-left: 32px;
+				padding-right: 32px;
+				color: $colorWhite !important;
+			}
+
+			&:hover {
+				background-color: $colorGreenFaded !important;
+			}
+		}
+	}
+}
+.main-navigation .main-nav ul ul li:hover > a, .main-navigation .main-nav ul ul li:focus > a, .main-navigation .main-nav ul ul li.sfHover > a{
+	background-color: $colorBackgroundOffWhite;
+}
+/* ----------- TOP BAR -------------*/
+
+.top-bar {
+	position: relative;
+	z-index: 100;
+	padding: 0 40px;
+	background-color: $colorDarkGray;
+
+	.large-grid-container {
+		padding-left: 0;
+		padding-right: 0;
+
+		.top-bar-container {
+			height: 50px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font-size: 12px;
+			.top-bar-titel{
+				display: flex;
+				flex-direction: row;
+				.typewriter-text{
+					font-weight: bold;
+					padding-right: 5px;
+				}
+				span{
+					font-weight: normal;
+				}
+			}
+
+			.mobile-top-bar-button {
+				display: none;
+				visibility: hidden;
+				opacity: 0;
+				background-color: $colorGreen;
+				padding-left: 32px;
+				padding-right: 32px;
+				font-weight: 600;
+				font-size: 14px;
+				height: 100%;
+				position: absolute;
+				right: 0;
+
+				&:hover {
+					color: $colorWhite;
+					background-color: $colorGreenFaded !important;
+				}
+			}
+
+			.top-bar-links {
+				display: flex;
+				flex-direction: row;
+
+				a {
+					display: flex;
+					align-items: center;
+					margin-left: 35px;
+
+					&:first-child {
+						margin-left: 0;
+					}
+
+					&:hover {
+						color: white;
+					}
+
+					span {
+						margin-left: 10px;
+					}
+				}
+
+				#phone-number::before {
+					content: "\e90c";
+					font-size: 22px;
+					font-family: 'icomoon' !important;
+				}
+
+				#email-adress::before {
+					content: "\e906";
+					font-size: 22px;
+					font-family: 'icomoon' !important;
+				}
+			}
+		}
+	}
+}
+/*=============================================
+          = Mobile header =
+===============================================*/
+
+#mobile-header {
+	background-color: $colorWhite;
+
+	.inside-navigation {
+		height: 90px;
+
+	}
+
+	.menu-toggle {
+		color: $colorBlack;
+		.gp-icon{
+			display: none;
+			visibility: hidden;
+			opacity: 0;
+			height: 0px;
+		}
+
+		&::before {
+			display: none !important;
+		}
+	}
+
+	#mobile-menu {
+		display: none;
+	}
+
+	.site-logo.mobile-header-logo {
+		margin-left: 20px;
+
+		img {
+			height: 75px;
+			padding: 5px 0;
+		}
+	}
+}
+/*=============================================
+          = Slideout nav (mobile) =
+===============================================*/
+#generate-slideout-menu {
+	height: calc(100% + 100%);
+	width: 300px;
+	background-color: $colorWhite;
+	left: 0;
+	top: -50px;
+	bottom: -50px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	opacity: 0;
+	transform: translateX(-100%);
+	pointer-events: none;
+	visibility: hidden;
+	transition: transform 200ms ease-in, opacity 100ms ease-in 100ms, visibility 0 200ms;
+
+	.slideout-logo {
+		a img {
+			max-height: 110px;
+			width: auto;
+			padding: 30px;
+		}
+	}
+
+	.slideout-menu {
+		li[class*="current-menu-item"] {
+			a {
+				color: $colorGreen;
+				background-color: transparent;
+			}
+			.sub-menu{
+				li a{
+				color: $colorBlack;
+				}
+			}
+		}
+		li {
+			border-bottom: $borderSettings;
+
+			a {
+				color: $colorBlack;
+				// font-family: $headingFont;
+				font-weight: 900;
+				line-height: normal;
+				padding: 20px 30px;
+
+				p {
+					// font-family: $bodyFont !important;
+					font-weight: normal;
+					margin-bottom: 0 !important;
+				}
+
+				&:hover {
+					background-color: transparent;
+				}
+			}
+
+
+			&.booking-btn{
+				border-bottom: 0 hidden transparent;
+				//background-color: transparent;
+				margin: 0px;
+				margin: auto;
+				width: 70%;
+				a{
+					width: fit-content;
+					margin: auto;
+					margin-top: 40px;
+				}
+				&:hover {
+					//background-color: transparent !important;
+				}
+			}
+		}
+
+
+	}
+
+	&.is-open {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0px);
+		pointer-events: auto;
+		transition: transform 200ms ease-out, opacity 300ms ease-out 0;
+	}
+
+	.inside-navigation {
+		padding-left: 0;
+		padding-right: 0;
+		display: flex;
+		flex-direction: column;
+
+		.slideout-exit {
+			display: none;
+			visibility: hidden;
+		}
+	}
+}
+
+.slideout-overlay {
+	z-index: 101 !important;
+}
+
+.slideout-navigation .menu-item-has-children .dropdown-menu-toggle {
+	float: inherit !important;
+	padding-left: 20px;
+}
+
+#sticky-navigation{
+	background-color: $colorWhite;
+	li{
+		&.booking-btn{
+			a{
+				color: $colorWhite;
+			}
+		}
+		a{
+		color: $colorBlack;
+		}
+	}
+
+	.navigation-branding img{
+		height: 80px !important;
+	}
+}

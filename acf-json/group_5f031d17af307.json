@@ -1,0 +1,117 @@
+{
+    "key": "group_5f031d17af307",
+    "title": "Widget - Social",
+    "fields": [
+        {
+            "key": "field_5f031d222930d",
+            "label": "col12",
+            "name": "col12",
+            "type": "column",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "column": "1_1"
+        },
+        {
+            "key": "field_5f031d2b2930e",
+            "label": "Sociale medier",
+            "name": "sociale_medier",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5f03207b2930f",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_5f03208029310",
+                    "label": "Ikon",
+                    "name": "icomoon",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "icomoon-select-element",
+                        "id": ""
+                    },
+                    "choices": {
+                        "false": "",
+                        "icon-instagram": "Instagram",
+                        "icon-linkedin": "Linkedin",
+                        "icon-facebook": "Facebook",
+                        "icon-quote-up": "Quote - Venstre",
+                        "icon-quote-down": "Quote - Højre",
+                        "icon-arrow-down": "Pil - Ned",
+                        "icon-arrow-right": "Pil - Højre",
+                        "icon-check": "Flueben",
+                        "icon-coaching": "Coaching",
+                        "icon-digitalisering": "Digitalisering",
+                        "icon-forretningsudvikling": "Forretningsudvikling",
+                        "icon-mail": "Email",
+                        "icon-telefon": "Telefon",
+                        "icon-pin": "Lokationsnål",
+                        "icon-sortsnak": "Sortsnak",
+                        "icon-sparring": "Sparring",
+                        "icon-work-life": "Work-Life",
+                        "icon-businessbuddy": "BusinessBuddy"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": true,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "widget",
+                "operator": "==",
+                "value": "socialemedier_widget"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1604309797
+}

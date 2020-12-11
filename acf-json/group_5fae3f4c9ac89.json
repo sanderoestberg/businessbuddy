@@ -1,0 +1,43 @@
+{
+    "key": "group_5fae3f4c9ac89",
+    "title": "Blog-indstillinger",
+    "fields": [
+        {
+            "key": "field_5fae7733f8ec9",
+            "label": "Sorter efter nyeste \/ ældste",
+            "name": "blog_sort",
+            "type": "true_false",
+            "instructions": "Blog bliver sorteret efter dato, skal nyeste eller ældste stå først?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Nyeste først",
+            "ui_off_text": "Ældste først"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-blog-indstillinger"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1607334857
+}
